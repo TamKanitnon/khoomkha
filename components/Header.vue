@@ -17,7 +17,7 @@
 
     <div class="header-bottom">
         <div class="container">
-            <img src="../public/images/khoomkha-logo.PNG" width="227px" style="cursor: pointer;">
+            <img src="../public/images/khoomkha-logo.PNG" width="227px" style="cursor: pointer;" @click="navigateTo('/')">
             <div class="search">
                 <input type="search" placeholder="ค้นหาสินค้า ผลิตภัณฑ์ หมวดหมู่ หรือแบรนด์...">
                 <i class="bi bi-search"></i>

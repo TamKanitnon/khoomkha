@@ -162,7 +162,7 @@
         transition: all 200ms ease;
     }
     .footer-middle .download img:hover {
-        transform: scale(1.05);
+        transform: scale(1.03);
     }
     .footer-middle .follow h5 {
         margin-bottom: 20px;
@@ -182,11 +182,11 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2); 
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3); 
         transition: all 200ms ease;
     }
     .footer-middle .follow .icon:hover {
-        background: #ababc2;
+        background: #f0f0f3;
     }
     .footer-middle .follow div .icon:nth-child(1) {
         color: #0000ff;
