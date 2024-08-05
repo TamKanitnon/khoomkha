@@ -44,7 +44,7 @@
                             <input type="text" placeholder="กรอกชื่อจริง-นามสกุล">
                         </div>
                         <div>
-                            <button class="btn-submit">สมัครสมาชิก</button>
+                            <button class="btn-submit" @click="registerSucceed = !registerSucceed">สมัครสมาชิก</button>
                         </div>
                         <div class="label-other-login">
                             <div></div>
@@ -75,7 +75,7 @@ export default {
     data() {
         return {
             memberType: 'personal',
-            registerSucceed: true
+            registerSucceed: false
         }
     }
 }
