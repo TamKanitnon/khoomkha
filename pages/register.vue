@@ -15,6 +15,10 @@
                     <div class="left">
                         <div class="input-form">
                             <label>ข้อมูลสมาชิก*</label>
+                            <select v-model="memberType">
+                                <option value="personal">บุคคลทั่วไป</option>
+                                <option value="entrepreneur">ผู้ประกอบการ</option>
+                            </select>
                         </div>
                         <div class="input-form">
                             <label>หมายเลขโทรศัพท์หรืออีเมล*</label>
@@ -32,19 +36,24 @@
 
                     <div class="right">
                         <div class="input-form">
-                            <label>SMS รหัสยืนยันตัวตน*</label>
-                            <input type="text" placeholder="กรอกตัวเลข 6 หลัก">
+                            <label>ชื่อผู้ใช้*</label>
+                            <input type="text" placeholder="กรอกชื่อผู้ใช้">
                         </div>
                         <div class="input-form">
-                            <label>SMS รหัสยืนยันตัวตน*</label>
-                            <input type="text" placeholder="กรอกตัวเลข 6 หลัก">
+                            <label>ชื่อจริง-นามสกุล*</label>
+                            <input type="text" placeholder="กรอกชื่อจริง-นามสกุล">
                         </div>
-                        <div class="btn-submit">
-                            <button>สมัครสมาชิก</button>
+                        <div>
+                            <button class="btn-submit">สมัครสมาชิก</button>
                         </div>
-                        <div class="other-register">
-                            <button class="btn-other-register"><i class="bi bi-facebook"></i> Facebook</button>
-                            <button class="btn-other-register"><img src="../public/images/logo-google.png" width="20"> Google</button>
+                        <div class="label-other-login">
+                            <div></div>
+                            <span>หรือเข้าสู่ระบบด้วย</span>
+                            <div></div>
+                        </div>
+                        <div class="other-login">
+                            <button class="btn-other-login"><i class="bi bi-facebook"></i> Facebook</button>
+                            <button class="btn-other-login"><img src="~/assets/images/logo-google.png" width="20"> Google</button>
                         </div>
                     </div>
                 </div>
@@ -60,7 +69,7 @@
 export default {
     data() {
         return {
-            
+            memberType: 'personal'
         }
     }
 }
@@ -84,7 +93,128 @@ export default {
     .container-full h4 i {
         font-size: 12px;
     }
-    .container-full h4 span {
+    .container-full span {
         color: #28c928;
+    }
+    .create-account {
+        margin-top: 55px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .create-account .title {
+        width: 850px;
+    }
+    .create-account .title h2 {
+        font-weight: 600;
+        font-size: 26px;
+        color: #28c928;
+        margin-bottom: 7px;
+    }
+    .create-account .title p {
+        font-size: 13px;
+    }
+    .create-account .title a {
+        color: #28c928;
+    }
+    .create-account .form-register {
+        display: flex;
+        justify-content: space-between;
+        gap: 45px;
+        width: 850px;
+    }
+    .create-account .form-register .left,
+    .create-account .form-register .right {
+        width: 100%;
+    }
+    .create-account .form-register .input-form {
+        margin-bottom: 22px;
+    }
+    .create-account .form-register .input-form label {
+        font-size: 12px;
+        display: block;
+        margin-bottom: 8px;
+    }
+    .create-account .form-register .input-form input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ababc2;
+        border-radius: 5px;
+        font-size: 13px;
+        outline: none;
+    }
+    .create-account .form-register .input-form select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ababc2;
+        border-radius: 5px;
+        font-size: 13px;
+        outline: none;
+        cursor: pointer;
+    }
+    .create-account .form-register .btn-submit {
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        border: 0;
+        background: #28c928;
+        color: white;
+        cursor: pointer;
+        transition: all 100ms ease;
+        margin-top: 6px;
+    }
+    .create-account .form-register .btn-submit:hover {
+        background: #1fbb1f;
+    }
+    .create-account .form-register .btn-submit:active {
+        transform: scale(0.98);
+    }
+    .create-account .form-register .label-other-login {
+        height: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .create-account .form-register .label-other-login span {
+        width: 320px;
+        text-align: center;
+        font-size: 12px;
+        color: #ababc2;
+    }
+    .create-account .form-register .label-other-login div {
+        background: #ababc2;
+        width: 100%;
+        height: 1px;
+        text-align: center;
+    }
+    .create-account .form-register .other-login {
+        display: flex;
+        justify-content: space-between;
+    }
+    .create-account .form-register .btn-other-login {
+        background: transparent;
+        border: 1px solid #28c928;
+        width: 185px;
+        height: 40px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #28c928;
+        font-size: 14px;
+        transition: all 100ms ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .create-account .form-register .btn-other-login:hover {
+        background: #f1faf1;
+    }
+    .create-account .form-register .btn-other-login:active {
+        transform: scale(0.97);
+    }
+    .create-account .form-register .btn-other-login i {
+        color: #2264f3;
+        font-size: 18px;
     }
 </style>

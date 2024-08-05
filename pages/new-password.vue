@@ -8,7 +8,7 @@
 
             <div class="form-forgot">
                 <div class="left">
-                    <img src="../public/images/banner-pic2.png" width="460">
+                    <img src="~/assets/images/banner-pic2.png" width="460">
                 </div>
 
                 <div class="right">
@@ -60,8 +60,6 @@ export default {
     .container-full h4 span {
         color: #28c928;
     }
-
-    
     .form-forgot {
         display: flex;
         align-items: center;

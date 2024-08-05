@@ -6,18 +6,18 @@
                 <p>We deliver to you every day from <span>7:00 to 23:00</span></p>
             </div>
             <div class="right">
-                <a href="#">Seller Centre</a>
-                <a href="#">ช้อปบนแอปของเรา</a>
-                <a href="#">ติดตามสินค้า</a>
-                <a href="#">ข่วยเหลือ</a>
-                <a href="#"><Nuxtlink to="/">เปลี่ยนภาษา</Nuxtlink></a>
+                <a>Seller Centre</a>
+                <a>ช้อปบนแอปของเรา</a>
+                <a>ติดตามสินค้า</a>
+                <a>ข่วยเหลือ</a>
+                <a>เปลี่ยนภาษา</a>
             </div>
         </div>
     </div>
 
     <div class="header-bottom">
         <div class="container">
-            <img src="../public/images/khoomkha-logo.PNG" width="227px" style="cursor: pointer;" @click="navigateTo('/')">
+            <img src="~/assets/images/khoomkha-logo.PNG" width="227px" style="cursor: pointer;" @click="navigateTo('/')">
             <div class="search">
                 <input type="search" placeholder="ค้นหาสินค้า ผลิตภัณฑ์ หมวดหมู่ หรือแบรนด์...">
                 <i class="bi bi-search"></i>
@@ -81,8 +81,6 @@
     .header-top .right a {
         font-size: 13px;
     }
-
-
     .header-bottom {
         width: 100%;
         display: flex;

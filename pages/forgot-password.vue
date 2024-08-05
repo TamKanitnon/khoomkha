@@ -8,7 +8,7 @@
 
             <div class="form-forgot">
                 <div class="left">
-                    <img src="../public/images/banner-pic2.png" width="460">
+                    <img src="~/assets/images/banner-pic2.png" width="460">
                 </div>
 
                 <div class="right">
@@ -18,7 +18,7 @@
                         <label>หมายเลยโทรศัพท์หรืออีเมล*</label>
                         <input type="text" placeholder="กรอกหมายเลขโทรศัพท์หรืออีเมลของคุณ">
                     </div>
-                    <NuxtLink to="/verify-identity"><button class="btn-submit">ยืนยัน</button></NuxtLink>
+                    <button class="btn-submit" @click="navigateTo('/verify-identity')">ยืนยัน</button>
                 </div>
             </div>
         </div>
@@ -59,8 +59,6 @@ export default {
     .container-full h4 span {
         color: #28c928;
     }
-
-    
     .form-forgot {
         display: flex;
         align-items: center;

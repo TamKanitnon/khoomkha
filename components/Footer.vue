@@ -10,7 +10,7 @@
     <div class="footer-middle">
         <div class="container">
             <div class="contact">
-                <img src="../public/images/do-you-need-help.png" width="280">
+                <img src="~/assets/images/do-you-need-help.png" width="280">
                 <div class="telephone">
                     <div class="icon"><i class="bi bi-telephone-outbound"></i></div>
                     <div>
@@ -28,26 +28,26 @@
             </div>
             <div class="help">
                 <h5>ศูนย์ช่วยเหลือ</h5>
-                <a href="#">สั่งซื้อสินค้าอย่างไร</a>
-                <a href="#">เริ่มขายสินค้าอย่างไร</a>
-                <a href="#">ช่องทางการชำระเงิน</a>
-                <a href="#">การจัดส่งสินค้า</a>
-                <a href="#">การคืนเงิน/คืนสินค้า</a>
-                <a href="#">ติดต่อ Khoomkha</a>
+                <a>สั่งซื้อสินค้าอย่างไร</a>
+                <a>เริ่มขายสินค้าอย่างไร</a>
+                <a>ช่องทางการชำระเงิน</a>
+                <a>การจัดส่งสินค้า</a>
+                <a>การคืนเงิน/คืนสินค้า</a>
+                <a>ติดต่อ Khoomkha</a>
             </div>
             <div class="khoomkha">
                 <h5>Khoomkha</h5>
-                <a href="#">เกี่ยวกับเรา</a>
-                <a href="#">ร่วมงานกับเรา</a>
-                <a href="#">Market Centre</a>
-                <a href="#">Seller Centre</a>
-                <a href="#">นโยบายของ Khoomkha</a>
-                <a href="#">ข้อกำหนดและเงื่อนไข</a>
+                <a>เกี่ยวกับเรา</a>
+                <a>ร่วมงานกับเรา</a>
+                <a>Market Centre</a>
+                <a>Seller Centre</a>
+                <a>นโยบายของ Khoomkha</a>
+                <a>ข้อกำหนดและเงื่อนไข</a>
             </div>
             <div class="download">
                 <h5>ดาวน์โหลดแอปพลิเคขั่น</h5>
-                <img src="../public/images/google-play.png" width="132">
-                <img src="../public/images/app-store.png" width="132">
+                <img src="~/assets/images/google-play.png" width="132">
+                <img src="~/assets/images/app-store.png" width="132">
             </div>
             <div class="follow">
                 <h5>ติดตามเราได้ที่</h5>
@@ -66,9 +66,9 @@
                 <p>Copyright 2024 &copy; Khoomkha</p>
             </div>
             <div class="right">
-                <a href="#">ข้อกำหนดและเงื่อนไข</a>
-                <a href="#">นโยบายของ Khoomkha</a>
-                <a href="#">ติดตามคำสั่งซื้อ</a>
+                <a>ข้อกำหนดและเงื่อนไข</a>
+                <a>นโยบายของ Khoomkha</a>
+                <a>ติดตามคำสั่งซื้อ</a>
             </div>
         </div>
     </div>
@@ -81,7 +81,7 @@
 
 <style scoped>
     .footer {
-        background: url('../public/images/banner-footer.png');
+        background: url('~/assets/images/banner-footer.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top center;
@@ -108,8 +108,6 @@
     .footer-top textarea:focus {
         border: 1px solid #ece7e7;
     }
-    
-
     .footer-middle {
         display: flex;
         justify-content: center;
@@ -200,8 +198,6 @@
         color: #dd0c0c;
         font-size: 17px;
     }
-
-
     .footer-bottom {
         width: 100%;
         height: 60px;

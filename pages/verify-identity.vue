@@ -8,12 +8,12 @@
 
             <div class="form-forgot">
                 <div class="left">
-                    <img src="../public/images/banner-pic2.png" width="460">
+                    <img src="~/assets/images/banner-pic2.png" width="460">
                 </div>
 
                 <div class="right">
                     <h2>ยืนยันตัวตน</h2>
-                    <p>ระบุรหัสที่ได้รับทางหมายเลข <span style="color: #28c928;">09X-XXX-XX88</span> (รหัสมีอายุการใช้งาน 5 นาที)</p>
+                    <p>ระบุรหัสที่ได้รับทางหมายเลข <span>09X-XXX-XX88</span> (รหัสมีอายุการใช้งาน 5 นาที)</p>
                     <div class="input-form username">
                         <input type="text">
                         <input type="text">
@@ -21,7 +21,7 @@
                         <input type="text">
                         <input type="text">
                         <input type="text">
-                        <label><a href="#">ส่งรหัสใหม่อีกครั้ง <span style="color: #28c928;">4:26</span> sec.</a></label>
+                        <label><a>ส่งรหัสใหม่อีกครั้ง <span>4:26</span> sec.</a></label>
                     </div>
                     <div class="btn">
                         <button class="btn-back">ย้อนกลับ</button>
@@ -64,11 +64,9 @@ export default {
     .container-full h4 i {
         font-size: 12px;
     }
-    .container-full h4 span {
+    .container-full span {
         color: #28c928;
     }
-
-    
     .form-forgot {
         display: flex;
         align-items: center;
