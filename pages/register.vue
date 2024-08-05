@@ -6,7 +6,7 @@
         <div class="container">
             <h4>หน้าแรก <i class="bi bi-chevron-right"></i> <span>สมัครสมาชิก</span></h4>
 
-            <div class="create-account">
+            <div class="create-account" v-if="!registerSucceed">
                 <div class="title">
                     <h2>สร้างบัญชี Khoomkha</h2>
                     <p>เป็นสมาชิกอยู่แล้ว ? <a @click="navigateTo('/')">เข้าสู่ระบบ</a> ที่นี้</p>
@@ -58,6 +58,11 @@
                     </div>
                 </div>
             </div>
+
+            <div class="form-succeed" v-if="registerSucceed">
+                <i class="bi bi-check-circle-fill"></i>
+                <h2>สมัครสมาชิกสำเร็จ</h2>
+            </div>
         </div>
     </div>
 
@@ -69,7 +74,8 @@
 export default {
     data() {
         return {
-            memberType: 'personal'
+            memberType: 'personal',
+            registerSucceed: true
         }
     }
 }
@@ -216,5 +222,20 @@ export default {
     .create-account .form-register .btn-other-login i {
         color: #2264f3;
         font-size: 18px;
+    }
+    .form-succeed {
+        display: flex;
+        height: 500px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #1eb31e;
+    }
+    .form-succeed i {
+        font-size: 140px;
+    }
+    .form-succeed h2 {
+        font-weight: 400;
+        margin-top: -30px;
     }
 </style>
