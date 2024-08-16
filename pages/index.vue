@@ -47,14 +47,10 @@
 </div>
 </template>
 
-<script>
-export default {
-    data() {
-        return {
-            loginSucceed: false
-        }
-    }
-}
+<script setup lang="ts">
+const loginSucceed = ref(false);
+
+console.log("show me the money", loginSucceed.value)
 </script>
 
 <style scoped>

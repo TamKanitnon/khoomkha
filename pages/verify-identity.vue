@@ -36,14 +36,8 @@
 </div>
 </template>
         
-<script>
-export default {
-    data() {
-        return {
-            
-        }
-    }
-}
+<script setup lang="ts">
+
 </script>
         
 <style scoped>

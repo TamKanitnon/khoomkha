@@ -70,15 +70,9 @@
 </div>
 </template>
         
-<script>
-export default {
-    data() {
-        return {
-            memberType: 'personal',
-            registerSucceed: false
-        }
-    }
-}
+<script  setup lang="ts">
+    const memberType = ref('personal');
+    const registerSucceed = ref(false);
 </script>
         
 <style scoped>
